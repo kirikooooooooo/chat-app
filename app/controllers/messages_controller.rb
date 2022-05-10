@@ -13,6 +13,7 @@ class MessagesController < ApplicationController
         else
         @messages = @room.messages.includes(:user)  #投稿に失敗した@messageの情報を保持しつつindex.html.erbを参照することがでる（この時、indexアクションは経由ない）
         render :index
+    end
   end
 
   private
@@ -20,5 +21,4 @@ class MessagesController < ApplicationController
   def message_params
     params.require(:message).permit(:content).merge(user_id: current_user.id)
   end
-end
 end
