@@ -119,20 +119,20 @@ overflow: scroll;
   display: flex;
 }
 
-.form_input{
+.form-input{
   background-color: white;
   display: flex;
   width: 100%;
 }
 
-.form_message{
+.form-message{
   border: none;
   height: 50px;
   width: 100% ;
   padding-left: 10px;
 }
 
-.form_submit{
+.form-submit{
   border: none;
   height: 50px;
   background-color: #38aef0;
